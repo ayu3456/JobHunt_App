@@ -15,7 +15,7 @@ import { Loader2 } from 'lucide-react'
 const Signup = () => {
 
     const [input, setInput] = useState({
-        fullName: "",
+        fullname: "",
         email: "",
         phoneNumber: "",
         password: "",
@@ -35,7 +35,7 @@ const Signup = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
         const formData = new FormData();    //formdata object
-        formData.append("fullName", input.fullName);
+        formData.append("fullname", input.fullname);
         formData.append("email", input.email);
         formData.append("phoneNumber", input.phoneNumber);
         formData.append("password", input.password);
@@ -77,10 +77,10 @@ const Signup = () => {
                         <Label>Full Name</Label>
                         <Input
                             type="text"
-                            value={input.fullName}
-                            name="fullName"
+                            value={input.fullname}
+                            name="fullname"
                             onChange={changeEventHandler}
-                            placeholder="ayush gupta"
+                            placeholder="patel"
                         />
                     </div>
                     <div className='my-2'>
@@ -90,7 +90,7 @@ const Signup = () => {
                             value={input.email}
                             name="email"
                             onChange={changeEventHandler}
-                            placeholder="ag@gmail.com"
+                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='my-2'>
@@ -110,7 +110,7 @@ const Signup = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="enter your password"
+                            placeholder="patel@gmail.com"
                         />
                     </div>
                     <div className='flex items-center justify-between'>
